@@ -36,12 +36,37 @@ table {
 
 /* Start of the Header */
 
-.row.display-flex {
-	display: flex;
-	flex-wrap: wrap;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
 
-  .row.display-flex > [class*='col-'] {
+.nav-container {
 	display: flex;
-	flex-direction: column;
+  	justify-content: space-between;
+  	padding: 10px 250px;
+	background-color: cornflowerblue;
+	color:white;
+	opacity: 0.8;
+	font-family: Fasthand, serif;
+	font-style:italic;
+}
+
+.welcome {
+	background-image: url("/assets/pizzanostra-wartung.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 1000px;
+	color:blue;
+}
+
+.head-content {
+	width: 50%;
+	margin: 200px auto;
+	text-align: center;
+	color: aliceblue;
+}
+
+span {
+	width: 20%;
+	height: 1px;
+	display: inline-block;
+	background-color: grey;
   }
