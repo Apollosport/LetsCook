@@ -36,7 +36,7 @@ table {
 
 /* Start of the Navbar */
 
-@import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
 .nav-container {
 	display: flex;
@@ -58,6 +58,7 @@ table {
 	background-position: center;
 	height: 800px;
 	background-color: whitesmoke;
+	font-family: "Libre Baskerville", serif;	
 }
 
 span {
@@ -70,7 +71,7 @@ span {
 
   .welcome h1 {
 	align-self:center;	
-	margin: 200px auto 0 0;
+	margin: 100px auto 0 0;
   }
 
   .welcome p {
@@ -91,11 +92,15 @@ span {
   .border-box1 {
 	padding: 20px;
 	border: 3px solid #CE2B37;	
-	border-radius: 10px;	
+	border-radius: 10px;
+	text-align:center	
   }
 
-  .border-box2 {
-	margin: 20px 20px;
+
+
+  .border-box2 {	
+	text-align:center;
+
   }
 
   ::placeholder {
@@ -120,11 +125,14 @@ span {
 	background-position: center;
 	height: 800px;
 	background-color: whitesmoke;
+
   }
 
   .pages h1 {
 	align-self:center;	
-	margin: 200px auto 0 0;
+	margin: 100px auto 20px 0;
+	color:black;
+	font-family: "Libre Baskerville", serif;
   }
 
   .pages span {
@@ -133,4 +141,10 @@ span {
 	display: inline-block;
 	background-color:#009646;
 	opacity: 1;
+	margin-bottom:100px ;	
   }
+
+  .whitey {
+	color: white;
+  }  
+
