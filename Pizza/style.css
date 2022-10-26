@@ -34,12 +34,18 @@ table {
 	border-spacing: 0;
 }
 
-.nav-container{
-	background-color: #009646;
+
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
+
+.nav-container {
 	display: flex;
-	flex-direction: row;
-	justify-content: center
-	
+  	justify-content: space-between;
+  	padding: 10px 250px;
+	background-color: #009646;
+	color:white;
+	opacity: 0.8;
+	font-family: Fasthand, serif;
+	font-style:italic;
 }
 main{ 
 
