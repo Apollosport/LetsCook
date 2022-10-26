@@ -52,7 +52,7 @@ table {
 /* End Navbar <-> Start Welcome */
 
 .welcome {
-	background-image: url("/assets/pizzaback.jpg");
+	background-image: url("./assets/pizzaback.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 800px;
@@ -86,13 +86,12 @@ span {
 	align-self:center;
   }
 
-
-
   hr {
 	width: 20%;
 	height: 1px;
 	display: inline-block;
 	background-color: whitesmoke;
   }
+
 
   
