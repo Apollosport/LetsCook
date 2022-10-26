@@ -121,7 +121,7 @@ main{
 .container .box .body .content div{
     transform-style: preserve-3d;
     padding: 20px;
-    background: linear-gradient(45deg, #FE0061,#FFEB3B);
+    background: linear-gradient(#009246,#FFFFFF , #CE2B37);
     transform: translateZ(100px);
 }
 
