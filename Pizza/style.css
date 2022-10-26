@@ -38,14 +38,37 @@ table {
 @import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
 .nav-container {
-	display: flex;
-  	justify-content: space-between;
-  	padding: 10px 250px;
-	background-color: #009646;
-	color:white;
-	opacity: 0.8;
-	font-family: Fasthand, serif;
-	font-style:italic;
+	padding: 10px;
+  background-color: #009246;
+  color:white;
+  opacity: 0.8;
+  font-family: Fasthand, serif;
+  font-style:italic;
+  width:100;
+}
+
+li {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+ul {
+  
+  margin-right: 20px;
+}
+
+header ul li a {
+  font-size: 1.5em;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 6px;
+  color:white;	
+}
+
+header ul li a:hover {
+background: white;
+color: #009246;
+text-decoration: none;  
 }
 
 main{ 
