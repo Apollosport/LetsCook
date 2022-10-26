@@ -144,7 +144,18 @@ span {
 	margin-bottom:100px ;	
   }
 
+  figcaption {
+	font-family: Fasthand, serif;
+	font-size: 2em;
+	font-style: italic;	
+	color:inherit;
+	margin-top: 5px;
+  }
+  
+
   .whitey {
 	color: white;
   }  
+
+   /* End pages <-> Start Footer */
 
