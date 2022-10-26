@@ -97,8 +97,10 @@ span {
   }
 
 
+
   .border-box2 {	
 	text-align:center;
+
   }
 
   ::placeholder {
@@ -117,7 +119,7 @@ span {
   /* End Welcome <-> Start pages */
 
   .pages {
-	background-image: url("./assets/italianflag1.jpg");
+	background-image: url("./assets/italianflag1.2.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -146,19 +148,14 @@ span {
 	font-family: Fasthand, serif;
 	font-size: 2em;
 	font-style: italic;	
-	
 	color:inherit;
 	margin-top: 5px;
   }
-
-  a:hover {
-	color:black;
-	text-decoration: none;
-  }
+  
 
   .whitey {
 	color: white;
-  }
+  }  
 
    /* End pages <-> Start Footer */
- 
+
