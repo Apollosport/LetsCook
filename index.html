@@ -1,16 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <link rel="stylesheet" href="style.css" />
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
- <p></p>
-</body>
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cosa Dostra</title>
+  </head>
+  <body>
+    <section class="header sticky-top">
+      <header>
+        <div class="nav-container">
+          <div class="row">
+            <div class="col-3">
+          <h1 class="cosadostra">Cosa&nbsp;Dostra</h1>
+        </div>        
+        <div class="col-9 align-self-end justify-content-end align-content-end">
+          <div class="row justify-content-end">
+            <ul id="home">
+            <li><a href="./index.html#" class="">Home</a>
+            <a
+              href="./Pasta/index.html"
+              class=""
+              >Pasta</a
+            ></li>
+            <li><a
+              href="./Pizza/index.html"
+              class=""
+              >Pizza</a
+            >
+            <li><a
+              href="./Salad/index.html"
+              class=""
+              >Salad</a
+            ></li>
+            <li><a href="./index.html#contact" class=""
+              >Contact</a
+            ></li>
+          </div>
+        </div>
+          </div>         
+        </div>
+      </header>
+    </section>
+    <section class="welcome">
+      <div class="container">
+        <div class="row">
+          <div class="col-2"></div>
+          <div class="col-8 text-center">
+            <h1>We offer the best Italian Recipes you&nbsp;can&nbsp;find!</h1>
+            <span></span>
+            <p>
+              We are an exquisite group of curators, that have specialized in the italian cuisine. We pride ourselfs with the combined knowledge of 500 years of cooking. All our recipes have been handpicked and proven to ensure the best cooking results imaginable. 
+            </p>
+          </div>
+          <div class="col-2"></div>
+        </div>
+        <div class="row">
+          <div class="col-3"></div>
+          <div
+            class="col-6 d-flex flex-wrap justify-content-center align-content-center"
+          >
+            <div class="border-box1">
+              <legend>Boopa-dee Bappa-dee</legend>
+              <div class="border-box2">
+                <input
+                  id="search"
+                  type="search"
+                  placeholder="Que cosa?"
+                  class="text-center"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-3"></div>
+        </div>
+      </div>
+    </section>
+    <section class="pages">
+      <div class="container">
+        <div class="row">
+          <div class="col-3"></div>
+          <div class="col-6 text-center">
+            <h1>
+              We've separated our recipes in three different&nbsp;sections:
+            </h1>
+            <span></span>
+          </div>
+          <div class="col-3"></div>
+        </div>
+        <div class="row text-center">
+          <div class="col-4">
+            <a href="./Salad/index.html"
+              ><img src="./assets/salad.round.png" width="200" height="200"
+            /></a>
+            <figcaption class="whitey">Salad</figcaption>
+          </div>
+          <div class="col-4 text-center">
+            <a href="./Pizza/index.html"
+              ><img src="./assets/pizza.round.png" width="200" height="200"
+            /></a>
+            <figcaption>Pizza</figcaption>
+          </div>
+          <div class="col-4 text-center">
+            <a href="./Pasta/index.html"
+              ><img src="./assets/pasta.round.png" width="200" height="200"
+            /></a>
+            <figcaption class="whitey">Pasta</figcaption>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container contact">
+        <div class="row">
+          <div class="col-6">
+      <div class="form">
+        <h1>Send us your recipe!</h1>
+        <form action="action_page.php" id="contact">
+          <div class="info">
+            <input type="text" name="name" placeholder="Name" />
+            <input type="text" name="mail" placeholder="Email" />
+            <input type="text" name="recipe" placeholder="Recipe" />            
+          </div>
+          <div>
+            <textarea rows="6" placeholder="Ingredients"></textarea>
+          </div>
+          <button type="submit" href="action_page.php" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+    <div class="col-6 socialcol">
+      <div class="social d-flex flex-column align-items-center">
+        <a href="http://www.facebook.com"><img src="./assets/facebook.svg" alt="Facebook" class="social"></a>
+        <a href="http://www.twitter.com"><img src="./assets/twitter.svg" alt="Twitter" class="social"></a>
+        <a href="http://www.instagram.com"><img src="./assets/instagram.svg" alt="Instagram" class="social"></a>
+        <a href="http://www.youtube.com"><img src="./assets/youtube.svg" alt="YouTube" class="social"></a>
+         </div>      
+    </div>    
+  </div>
+  </div>
+  <p class="copy text-center">&copy; copyright Cosa Dostra</p>
+    </footer>
+  </body>
 </html>
