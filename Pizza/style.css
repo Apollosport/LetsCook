@@ -35,9 +35,11 @@ table {
 }
 
 .nav-container{
+	background-color: lightgreen;
 	display: flex;
 	flex-direction: row;
 	justify-content: center
+	
 }
 main{ 
 
