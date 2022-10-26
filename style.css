@@ -142,14 +142,6 @@ span {
 	margin-bottom:100px ;	
   }
 
-  .rotateimg180 {
-	-webkit-transform:rotate(180deg);
-	-moz-transform: rotate(180deg);
-	-ms-transform: rotate(180deg);
-	-o-transform: rotate(180deg);
-	transform: rotate(180deg);
-  }
-
   figcaption {
 	font-family: Fasthand, serif;
 	font-size: 2em;
@@ -168,30 +160,5 @@ span {
 	color: white;
   }
 
-  /*.blupp div {
-	position: absolute;
-	left: 40px;
-	top: 40px;
-	width: 100px;
-	height: 100px;
-	background-color: lightgray;
-  }
-  
-  .rotate {
-	background-color: transparent;
-	outline: 2px dashed;
-	transform: rotate(45deg);
-  }
-  
-  .rotate-translate {
-	background-color: pink;
-	transform: rotate(45deg) translateX(180px);
-  }
-  
-  .translate-rotate {
-	background-color: gold;
-	transform: translateX(180px) rotate(45deg);
-  }*/
-  
-
+   /* End pages <-> Start Footer */
  
