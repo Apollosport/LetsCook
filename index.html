@@ -16,40 +16,36 @@
   <body>
     <section class="header sticky-top">
       <header>
-        <div class="nav-container navbar-dark">
-          <h1 class="cosadostra">Cosa Dostra</h1>
-          <nav class="navbar navbar-expand-lg text-info">
-            <a class="navbar-brand" href="#">Italian Recipes</a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
+        <div class="nav-container">
+          <div class="row">
+            <div class="col-3">
+          <h1 class="cosadostra">Cosa&nbsp;Dostra</h1>
+        </div>        
+        <div class="col-9 align-self-end justify-content-end align-content-end">
+          <div class="row justify-content-end">
+            <ul id="home">
+            <li><a href="./index.html#" class="">Home</a>
+            <a
+              href="./Pasta/index.html"
+              class=""
+              >Pasta</a
+            ></li>
+            <li><a
+              href="./Pizza/index.html"
+              class=""
+              >Pizza</a
             >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#"
-                    >Home <span class="sr-only">(current)</span></a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Pasta</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Pizza</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Salad</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
+            <li><a
+              href="./Salad/index.html"
+              class=""
+              >Salad</a
+            ></li>
+            <li><a href="./index.html#contact" class=""
+              >Contact</a
+            ></li>
+          </div>
+        </div>
+          </div>         
         </div>
       </header>
     </section>
@@ -61,11 +57,7 @@
             <h1>We offer the best Italian Recipes you&nbsp;can&nbsp;find!</h1>
             <span></span>
             <p>
-              This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel
-              velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum
-              auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
-              Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
-              Morbi accumsan ipsum velit.
+              We are an exquisite group of curators, that have specialized in the italian cuisine. We pride ourselfs with the combined knowledge of 500 years of cooking. All our recipes have been handpicked and proven to ensure the best cooking results imaginable. 
             </p>
           </div>
           <div class="col-2"></div>
@@ -76,7 +68,7 @@
             class="col-6 d-flex flex-wrap justify-content-center align-content-center"
           >
             <div class="border-box1">
-              <legend class="text-center">Boopa-dee Bappa-dee</legend>
+              <legend>Boopa-dee Bappa-dee</legend>
               <div class="border-box2">
                 <input
                   id="search"
@@ -94,21 +86,67 @@
     <section class="pages">
       <div class="container">
         <div class="row">
-          <div class="col-2"></div>
-          <div class="col-8 text-center">
+          <div class="col-3"></div>
+          <div class="col-6 text-center">
             <h1>
               We've separated our recipes in three different&nbsp;sections:
             </h1>
             <span></span>
-            <div class="row">
-              <div class="col-4"></div>
-              <div class="col-4"></div>
-              <div class="col-4"></div>
-            </div>
           </div>
-          <div class="col-2"></div>
+          <div class="col-3"></div>
+        </div>
+        <div class="row text-center">
+          <div class="col-4">
+            <a href="./Salad/index.html"
+              ><img src="./assets/salad.round.png" width="200" height="200"
+            /></a>
+            <figcaption class="whitey">Salad</figcaption>
+          </div>
+          <div class="col-4 text-center">
+            <a href="./Pizza/index.html"
+              ><img src="./assets/pizza.round.png" width="200" height="200"
+            /></a>
+            <figcaption>Pizza</figcaption>
+          </div>
+          <div class="col-4 text-center">
+            <a href="./Pasta/index.html"
+              ><img src="./assets/pasta.round.png" width="200" height="200"
+            /></a>
+            <figcaption class="whitey">Pasta</figcaption>
+          </div>
         </div>
       </div>
     </section>
+    <footer>
+      <div class="container contact">
+        <div class="row">
+          <div class="col-6">
+      <div class="form">
+        <h1>Send us your recipe!</h1>
+        <form action="action_page.php" id="contact">
+          <div class="info">
+            <input type="text" name="name" placeholder="Name" />
+            <input type="text" name="mail" placeholder="Email" />
+            <input type="text" name="recipe" placeholder="Recipe" />            
+          </div>
+          <div>
+            <textarea rows="6" placeholder="Ingredients"></textarea>
+          </div>
+          <button type="submit" href="action_page.php" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+    <div class="col-6 socialcol">
+      <div class="social d-flex flex-column align-items-center">
+        <a href="http://www.facebook.com"><img src="./assets/facebook.svg" alt="Facebook" class="social"></a>
+        <a href="http://www.twitter.com"><img src="./assets/twitter.svg" alt="Twitter" class="social"></a>
+        <a href="http://www.instagram.com"><img src="./assets/instagram.svg" alt="Instagram" class="social"></a>
+        <a href="http://www.youtube.com"><img src="./assets/youtube.svg" alt="YouTube" class="social"></a>
+         </div>      
+    </div>    
+  </div>
+  </div>
+  <p class="copy text-center">&copy; copyright Cosa Dostra</p>
+    </footer>
   </body>
 </html>
