@@ -2,6 +2,14 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+p {
+	font-family: Fasthand;
+}
+h1,h2,h3 {
+	font-family: "Libre Baskerville", serif;
+}
 * {
 	margin: 0;
 	padding: 0;
@@ -32,4 +40,52 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+.pasta div {
+	border:2 px solid black;
+}
+.col-sm {
+	border:2 px solid black;
+	justify-content: center;
+}
+.col-sm img{
+	max-width: 70%;
+}
+.recepie-image img {
+	max-width: 50%; 	
+}
+.main-image image {
+	max-height: 20%;
+}
+.raiting .checked {
+  color: orange;
+}
+.carbonara {
+	border: 2 px solid black;
+	padding-left: auto;
+	padding-right: auto;
+	width: 70%;
+	padding-left: 10%;
+}
+.recipe-data {
+	opacity: 0.7;
+}
+.ingredients ul {
+	padding-left: 5%;
+	display: list-item;
+	list-style-type: circle;
+}
+.ingredient ul > li {
+	color: #009246;
+}
+.raiting {
+    overflow: hidden; 
+    text-align: center;
+}
+.raiting span {
+    color: black;
+    display: inline-block;
+    /* float:left;  remove */
+    margin: 10px 10px 0 0;
+    padding: 2px 2px;
 }
