@@ -44,7 +44,7 @@
     </div>
     <div class="pasta-recepies">
         <div class="main-image">
-            <image src="../assets/pasta-main-image.jpg"></image>
+            <div class="img" src="../assets/welcome_img.jpg"></div>
             <div class="container-fluid">
                 <h2 class="text-center my-5">The best Italian-style pasta recipes</h2>
                 <div class="row">
@@ -92,9 +92,13 @@
             <div class="full-recepie">
                 <div class="container">
                     <div class="row">
-                        <div class="column-sm">
-                            <h3>Carbonara</h3>
+                        <div class="col-8">
+                            <h3 class="text-left">Carbonara</h3>
+                            <p class="text-left">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <div col-4>
                             <div class="raiting">
+                                <span class="font-weight-bold"> Rate this recepie</span>
                                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
@@ -104,14 +108,57 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="column-ml">
-                            <p>Pasta carbonara is a simple dish with just a few ingredients, but you'll find many fun variations in this collection of 40+ pasta carbonara recipes to try.</p>
+                        <div class="row">
+                            <div class="column-sm-4">
+                                <div>
+                                    <img class="" src="../assets/carbonara.jpg" alt="Pasta Carbonara">
+                                </div>
+                            </div>
+                            <div class="ingredients column-sm-8">
+                                <div>
+                                <h1>Ingredients</h1>
+                                <ul>
+                                    <li>
+                                        <span>
+                                            2 teaspoons olive oil
+                                        </span>
+                                        
+                                    </li>
+                                    <br>
+                                    <li>
+                                        <span>
+                                            1 pound guanciale (cured pork cheek), diced
+                                        </span>
+                                    </li>
+                                    <br>
+                                    <li>
+                                        <span>
+                                        1 (16 ounce) package spaghetti
+                                        <span>
+                                    </li>
+                                    <br>
+                                    <li>
+                                        <span>
+                                        3 large eggs
+                                        </span>
+                                    </li>
+                                    <br>
+                                    <li>
+                                        <span>
+                                        10 tablespoons grated Pecorino Romano cheese, divided
+                                        </span>
+                                    </li>
+                                    <br>
+                                    <li>
+                                        <span>
+                                            salt and ground black pepper to taste
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
                     <div class="row">
-                        <div class="column-sm">
-                            <img class="img-thumbnail px-auto" src="../assets/carbonara.jpg">
+                        
                         </div>
                 </div>
                 <div class="recipe-data">
@@ -146,47 +193,7 @@
                         <p  class="text-center">Jump to Nutrition Facts</p>
                     </div>
                 </div>
-                <div class="ingredients">
-                    <h1>Ingredients</h1>
-                    <ul>
-                        <li>
-                            <span>
-                                2 teaspoons olive oil
-                            </span>
-                            
-                        </li>
-                        <br>
-                        <li>
-                            <span>
-                                1 pound guanciale (cured pork cheek), diced
-                            </span>
-                        </li>
-                        <br>
-                        <li>
-                            <span>
-                            1 (16 ounce) package spaghetti
-                            <span>
-                        </li>
-                        <br>
-                        <li>
-                            <span>
-                            3 large eggs
-                            </span>
-                        </li>
-                        <br>
-                        <li>
-                            <span>
-                            10 tablespoons grated Pecorino Romano cheese, divided
-                            </span>
-                        </li>
-                        <br>
-                        <li>
-                            <span>
-                                salt and ground black pepper to taste
-                            </span>
-                        </li>
-                    </ul>
-                </div>
+               
                 <div class="directions">
                     <h3>Directions</h3>
                     <p class="font-weight-bold">Step 1</p>
@@ -227,5 +234,47 @@
             <button>Add rating and review</button>
         </div>
 </body>
+
+<footer>
+    <div class="container contact">
+      <div class="row">
+        <div class="col-6">
+    <div class="form">
+      <h1>Send us your recipe!</h1>
+      <form action="action_page.php" id="contact">
+        <div class="info">
+          <input type="text" name="name" placeholder="Name" />
+          <input type="text" name="mail" placeholder="Email" />
+          <input type="text" name="recipe" placeholder="Recipe" />            
+        </div>
+        <div>
+          <textarea rows="6" placeholder="Ingredients"></textarea>
+        </div>
+        <button type="submit" href="action_page.php" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+  <div class="col-6 socialcol">
+    <div class="social d-flex flex-column align-items-center">
+      <a href="http://www.facebook.com"><img src="../assets/facebook.svg" alt="Facebook" class="social"></a>
+      <a href="http://www.twitter.com"><img src="../assets/twitter.svg" alt="Twitter" class="social"></a>
+      <a href="http://www.instagram.com"><img src="../assets/instagram.svg" alt="Instagram" class="social"></a>
+      <a href="http://www.youtube.com"><img src="../assets/youtube.svg" alt="YouTube" class="social"></a>
+       </div>      
+  </div>    
+  </div>
+  </div>
+  <h1>Give Us a Quick Feedback</h1>
+  
+  <div class="rating">
+  
+    <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+    <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+    <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+    <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+    <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+  </div>
+  <p class="copy text-center">&copy; copyright Cosa Dostra</p>
+  </footer>
 
 </html>
