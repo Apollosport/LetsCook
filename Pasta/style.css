@@ -2,7 +2,45 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body::-webkit-scrollbar{
+  display: none;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
 
 .nav-container {
 	padding: 10px;
@@ -12,6 +50,21 @@
   font-family: Fasthand, serif;
   font-style:italic;
   width:100;
+}
+
+
+.nav-container ul li a {
+  font-size: 1.5em;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 6px;
+  color:white;	
+}
+
+.nav-container ul li a:hover {
+background: white;
+color: #009246;
+text-decoration: none;  
 }
 
 li {
