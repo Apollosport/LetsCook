@@ -33,9 +33,12 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+body::-webkit-scrollbar{
+  display: none;
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
 
 .nav-container {
 	padding: 10px;
@@ -212,3 +215,5 @@ button {
   padding: 10px;
   width: auto;
 }
+
+
