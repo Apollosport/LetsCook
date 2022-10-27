@@ -4,9 +4,39 @@
 */
 @import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
-p {
-	font-family: Fasthand;
+.nav-container {
+	padding: 10px;
+  background-color: #009246;
+  color:white;
+  opacity: 0.8;
+  font-family: Fasthand, serif;
+  font-style:italic;
+  width:100;
 }
+
+li {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+ul {
+  margin-right: 20px;
+}
+
+header ul li a {
+  font-size: 1.5em;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 6px;
+  color:white;	
+}
+
+header ul li a:hover {
+background: white;
+color: #009246;
+text-decoration: none;  
+}
+
 h1,h2,h3 {
 	font-family: "Libre Baskerville", serif;
 }
@@ -26,7 +56,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
+.nav-container ol, ul {
 	list-style: none;
 }
 blockquote, q {
@@ -44,13 +74,6 @@ table {
 .pasta div {
 	border:2 px solid black;
 }
-.col-sm {
-	border:2 px solid black;
-	justify-content: center;
-}
-.col-sm img{
-	max-width: 70%;
-}
 .recepie-image img {
 	max-width: 50%; 	
 }
@@ -58,7 +81,7 @@ table {
 	max-height: 20%;
 }
 .raiting .checked {
-  color: orange;
+  color: #CE2B37;
 }
 .carbonara {
 	border: 2 px solid black;
@@ -68,15 +91,35 @@ table {
 	padding-left: 10%;
 }
 .recipe-data {
+	background-color: #f5f6ea;
 	opacity: 0.7;
+}
+.recipe-data .jump-to {
+	padding-left: auto;
+	padding-right: auto;
+	padding-bottom: 1%;
+}
+.recipe-data hr {
+	color: black;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
 }
 .ingredients ul {
 	padding-left: 5%;
+}
+.ingredients ul > li {
+	color: #009246;
 	display: list-item;
+	list-style-position: inside;
 	list-style-type: circle;
 }
-.ingredient ul > li {
-	color: #009246;
+.ingredients ul > li:hover {
+	color: #CE2B37;
+	
+}
+.ingredients ul>li span {
+	color: black;
 }
 .raiting {
     overflow: hidden; 
@@ -88,4 +131,19 @@ table {
     /* float:left;  remove */
     margin: 10px 10px 0 0;
     padding: 2px 2px;
+}
+.nutrition-facts {
+	background-color: #f5f6ea;
+}
+.nutrition-facts .row {
+	padding-bottom: 2%;
+}
+.nutrition-facts .row .col-xs {
+	padding-right: 5%;
+	padding-left: 5%;
+}
+
+.img-thumbnail {
+	max-width: max-content;
+  max-height: 250px;
 }
