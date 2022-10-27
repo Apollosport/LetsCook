@@ -3,33 +3,132 @@
    License: none (public domain)
 */
 * {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
+
+/* Start of the Navbar */
+
+@import url("https://fonts.googleapis.com/css2?family=Fasthand&display=swap");
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 250px;
+  background-color: #009646;
+  color: white;
+  opacity: 0.8;
+  font-family: Fasthand, serif;
+  font-style: italic;
+}
+
+/* End Navbar <-> Start Welcome */
+
+.welcome {
+  background-image: url("assets/salat\ image\ \(1\).png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 800px;
+  background-color: whitesmoke;
+}
+
+span {
+  width: 20%;
+  height: 1px;
+  display: inline-block;
+  background-color: whitesmoke;
+}
+
+.welcome h1 {
+  align-self: center;
+  margin: 200px auto 0 0;
+}
+
+.welcome p {
+  margin-top: 20px;
+  font-family: Fasthand, serif;
+  font-style: italic;
+  font-size: 1.2em;
+}
+.welcome * {
+  color: whitesmoke;
+}
+
+.welcome legend {
+  margin-top: 90px;
+  align-self: center;
+}
+
+hr {
+  width: 20%;
+  height: 1px;
+  display: inline-block;
+  background-color: whitesmoke;
+}
+
+/* Nav Ends Here */
+
+/* Section starts here Here */
+
+body {
+  background: url("../assets/salat.jpg");
+}
+
+.row {
+  border-top: 50px solid white;
+}
+
+.salad {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.container {
+  background-color: white;
+  width: 100%;
+}
+
+/* Section ends here Here */
