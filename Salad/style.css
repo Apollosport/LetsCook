@@ -49,23 +49,45 @@ table {
 
 /* Start of the Navbar */
 
-@import url("https://fonts.googleapis.com/css2?family=Fasthand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fasthand&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
 
 .nav-container {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 250px;
-  background-color: #009646;
+  padding: 10px;
+  background-color: #009246;
   color: white;
+
   opacity: 0.8;
   font-family: Fasthand, serif;
   font-style: italic;
 }
 
+li {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+ul {
+  margin-right: 20px;
+}
+
+header ul li a {
+  font-size: 1.5em;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 6px;
+  color: white;
+}
+
+header ul li a:hover {
+  background: white;
+  color: #009246;
+  text-decoration: none;
+}
+
 /* End Navbar <-> Start Welcome */
 
 .welcome {
-  background-image: url("assets/salat\ image\ \(1\).png");
+  background-image: url(""./assets/pizzaback.jpg"");
   background-size: cover;
   background-repeat: no-repeat;
   height: 800px;
@@ -114,10 +136,6 @@ body {
   background: url("../assets/salat.jpg");
 }
 
-.row {
-  border-top: 50px solid white;
-}
-
 .salad {
   display: flex;
   flex-direction: row;
@@ -126,9 +144,17 @@ body {
   align-content: center;
 }
 
+.row {
+  background-color: white solid;
+}
 .container {
   background-color: white;
   width: 100%;
+}
+.col-4 {
+  border: 10px solid rgb(224, 244, 184);
+  padding: 10px;
+  border-image: url(border.png) 50 round;
 }
 
 /* Section ends here Here */
