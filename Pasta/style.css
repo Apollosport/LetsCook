@@ -146,7 +146,6 @@ table {
   color: #CE2B37;
 }
 .carbonara {
-	border: 2 px solid black;
 	padding-left: auto;
 	padding-right: auto;
 	width: 70%;
@@ -169,8 +168,8 @@ table {
 	margin-left: auto;
 	margin-right: auto;
 }
-.carbonara-full-recepieh3, p {
-  padding-left: 0;
+.carbonara-full-recepie p {
+  padding-left: 0%;
 }
 .ingredients {
 	padding-top: 5%;
@@ -200,6 +199,9 @@ table {
     overflow: hidden; 
     text-align: center;
 		padding-bottom: 5%;
+}
+.ingredients .raiting span:hover {
+  color: #CE2B37;
 }
 .raiting span {
     color: black;
