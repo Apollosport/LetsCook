@@ -33,10 +33,15 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+body::-webkit-scrollbar{
+  display: none;
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
+h3{
+  text-align: center;
+}
 .nav-container {
 	padding: 10px;
   background-color: #009246;
@@ -73,7 +78,7 @@ text-decoration: none;
 
 main{ 
 
-	background: url(../assets/top-view-pizza-gray-background_334341-146.jpg) no-repeat center center fixed; 
+	background: url(../assets/pizzablog.jpeg) no-repeat center center; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -171,7 +176,7 @@ footer {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 710px;
+  height: 960px;
   background-color: whitesmoke;
 }
 
@@ -211,4 +216,51 @@ button {
 .social {
   padding: 10px;
   width: auto;
+}
+
+
+.rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+.rating > input{ display:none;}
+
+.rating > label {
+  position: relative;
+    width: 1em;
+    font-size: 6vw;
+    color: #FFD600;
+    cursor: pointer;
+}
+.rating > label::before{ 
+  content: "\2605";
+  position: absolute;
+  opacity: 0;
+}
+.rating > label:hover:before,
+.rating > label:hover ~ label:before {
+  opacity: 1 !important;
+}
+
+.rating > input:checked ~ label:before{
+  opacity:1;
+}
+
+.rating:hover > input:checked ~ label:before{ opacity: 0.4; }
+
+body{ background: #222225; color: white;}
+h1, p{ 
+    text-align: center;
+    
+}
+
+h1{
+    margin-top:150px;
+}
+p{ font-size: 16px;}
+@media only screen and (max-width: 600px) {
+  h1{font-size: 14px;}
+  p{font-size: 12px;}
 }
