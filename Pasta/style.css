@@ -146,7 +146,6 @@ table {
   color: #CE2B37;
 }
 .carbonara {
-	border: 2 px solid black;
 	padding-left: auto;
 	padding-right: auto;
 	width: 70%;
@@ -169,12 +168,19 @@ table {
 	margin-left: auto;
 	margin-right: auto;
 }
+.carbonara-full-recepie p {
+  padding-left: 0%;
+}
 .ingredients {
-	padding-top: 7%;
+	padding-top: 5%;
 	padding-left: 5%;
+  padding-bottom: 5%;
 }
 .ingredients ul {
 	padding-left: 5%;
+}
+.ingredients ul {
+  padding-bottom: 10%;
 }
 .ingredients ul > li {
 	color: #009246;
@@ -194,6 +200,9 @@ table {
     text-align: center;
 		padding-bottom: 5%;
 }
+.ingredients .raiting span:hover {
+  color: #CE2B37;
+}
 .raiting span {
     color: black;
     display: inline-block;
@@ -202,7 +211,11 @@ table {
     padding: 2px 2px;
 }
 .nutrition-facts {
+	margin-top: 2%;
 	background-color: #f5f6ea;
+	opacity: 0.7;
+  padding-top: 2%;
+  padding-left: 10%;
 }
 .nutrition-facts .row {
 	padding-bottom: 2%;
@@ -211,7 +224,9 @@ table {
 	padding-right: 5%;
 	padding-left: 5%;
 }
-
+.nutrition-facts p {
+  padding-top: 2%;
+}
 .img-thumbnail {
 	max-width: max-content;
   max-height: 250px;
@@ -220,8 +235,9 @@ table {
 	padding-top: 5%;
 	padding-bottom: 5%;
 }
-.directions p {
+.directions h3, p {
   padding-top: 2%;
+  padding-left: 10%;
   line-height: 1,5 em;
 }
 footer {
