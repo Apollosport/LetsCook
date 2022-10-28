@@ -33,10 +33,15 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+body::-webkit-scrollbar{
+  display: none;
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
+h3{
+  text-align: center;
+}
 .nav-container {
 	padding: 10px;
   background-color: #009246;
@@ -73,13 +78,16 @@ text-decoration: none;
 
 main{ 
 
-	background: url(../assets/top-view-pizza-gray-background_334341-146.jpg) no-repeat center center fixed; 
+	background: url(../assets/pizzablog.jpeg) no-repeat center center; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 	width: 100%;
-	height: 1600px;
+	height: 1200px;
+  }
+  main p{
+    font-family: 'Fasthand';
   }
 .container{
     transform-style: preserve-3d;
@@ -159,4 +167,100 @@ span {
 	opacity: 1;
 	margin-left: 42%;
 	
+}
+
+
+
+footer {
+  background-image: url("../assets/pizzabäcker.3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 960px;
+  background-color: whitesmoke;
+}
+
+.contact h1 {
+  font-family: Fasthand, serif;
+}
+
+input[type="text"],
+input[type="search"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  box-shadow: 0 0 10px #009246;
+}
+
+input[type="submit"]:hover {
+  background-color: #009246;
+}
+
+button {
+  margin-top: 15px !important;
+}
+.form,
+.copy {
+  margin-top: 100px;
+}
+.socialcol {
+  margin-top: 200px;
+}
+
+.social {
+  padding: 10px;
+  width: auto;
+}
+
+
+.rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+.rating > input{ display:none;}
+
+.rating > label {
+  position: relative;
+    width: 1em;
+    font-size: 6vw;
+    color: #FFD600;
+    cursor: pointer;
+}
+.rating > label::before{ 
+  content: "\2605";
+  position: absolute;
+  opacity: 0;
+}
+.rating > label:hover:before,
+.rating > label:hover ~ label:before {
+  opacity: 1 !important;
+}
+
+.rating > input:checked ~ label:before{
+  opacity:1;
+}
+
+.rating:hover > input:checked ~ label:before{ opacity: 0.4; }
+
+body{ background: #222225; color: white;}
+h1, p{ 
+    text-align: center;
+    
+}
+
+h1{
+    margin-top:150px;
+}
+p{ font-size: 16px;}
+@media only screen and (max-width: 600px) {
+  h1{font-size: 14px;}
+  p{font-size: 12px;}
 }
