@@ -15,9 +15,9 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
+/*body {
 	line-height: 1;
-}
+}*/
 ol, ul {
 	list-style: none;
 }
@@ -67,7 +67,12 @@ background: white;
 color: #009246;
 text-decoration: none;  
 }
-
+.highlight {
+  color: #009246;
+}
+.highlight:hover {
+  color: #CE2B37;
+}
 li {
   display: inline-block;
   margin-top: 10px;
@@ -148,8 +153,10 @@ table {
 	padding-left: 10%;
 }
 .recipe-data {
+  margin-top: 2%;
 	background-color: #f5f6ea;
 	opacity: 0.7;
+  padding-top: 2%;
 }
 .recipe-data .jump-to {
 	padding-left: auto;
@@ -213,7 +220,10 @@ table {
 	padding-top: 5%;
 	padding-bottom: 5%;
 }
-
+.directions p {
+  padding-top: 2%;
+  line-height: 1,5 em;
+}
 footer {
   background-image: url("../assets/pizzabäcker.3.png");
   background-size: cover;
